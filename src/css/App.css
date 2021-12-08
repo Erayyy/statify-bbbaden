@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --side-space: 10%;
+
+    --header-container-width: 10em;
+    --header-height: 5em;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Header*/
+header{
+z-index: 1;
+position: fixed;
+top: 0;
+height: var(--header-height);
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding-left:  var(--side-space);
+padding-right: var(--side-space);
+
+background-color: #010203;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header_flex_logo{
+    width: var(--header-container-width);
+    display: flex;
+}
+
+.header_flex_nav{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header_nav{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header_nav p{
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header_nav p:hover{
+    transition: all 0.3s ease 0s;
+    color: #1ed760;
+}
+
+.header_flex_{
+    width: var(--header-container-width);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header_login{
+    background-color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #1DB954;
+    transition: all 0.1s ease 0s;
+    padding: 10px 30px;
+}
+.header_login:hover{
+    background-color: #1DB954;
+    color: white;
+    transform: scale(1.1);
+}
+
+.header_profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_profile_name{
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.header_profile_image{
+    justify-content: center;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.header_profile_image img{
+    border-radius: 50px;
+    justify-self: center;
+    align-self: center;
+
+    height: 40px;
+    width: 40px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #010203;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 18px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      color: #1ed760;
+      ;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    
+  }
+
+
+/*Main*/
+main{
+    margin-top: var(--header-height);
+}
+
+/*Footer*/
+footer{
+display: grid;
+grid-template-columns: var(--side-space) 1fr 1fr 1fr var(--side-space); 
+background-color: #010203;
+
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+.footer_grid_logo{
+    grid-column: 2;
+}
+
+.footer_grid_links{
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_grid_links p{
+    margin-top: -30px;
+    transition: all 0.1s ease 0s;
+    color: white;
+    text-align: center;
+}
+
+.footer_grid_links p:hover{
+    transition: all 0.3s ease 0s;
+    color: #1ed760;
+}
+
+.footer_grid_socials{
+    grid-column: 4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header_flex_nav{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    :root{
+        --side-space: 5%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_grid_logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer_grid_socials{
+        margin-bottom: 10px;
+    }
+
+    .dropdown-content {
+        margin-left: -50px;
+      }
+
+  }
+

@@ -1,0 +1,9 @@
+
+
+.card_wrapper{
+    max-width: 90vw;
+    height: 500px;
+    display: flex;
+    overflow-x: auto;
+}
+

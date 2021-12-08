@@ -1,0 +1,118 @@
+.topArtists{
+    margin-top: 80px;
+    background-image: url('../images/Top3.svg');
+    background-size: cover;
+    background-repeat: inherit;
+}
+
+.topTracks{
+    margin-top: 80px;
+    background-image: url('../images/Top2.svg');
+    background-size: cover;
+    background-repeat: inherit;
+}
+
+.topGenres{
+    margin-top: 80px;
+    background-image: url('../images/Top1.svg');
+    background-size: cover;
+    background-repeat: inherit;
+}
+
+.top_grid{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 2;
+}
+
+.top_menu{
+    margin-left: 200px;
+    margin-right: 200px;
+    grid-column: 2;
+    grid-row: 1;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_select{
+    height: 100px;
+    width: 300px;
+    color: black;
+}
+
+.top_cards{
+    grid-column: 2;
+    grid-row: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px;
+    padding-top: 0px;
+
+}
+
+.select-wrapper {
+    width: 200px;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+  select {
+    
+    border: none;
+    width: 100%;
+    height: 40px;
+    -moz-padding-start: calc(10px - 3px);
+    padding-left: 10px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+    border-radius: 3px;
+  }
+  
+
+option{
+    color: black;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .top_cards{
+        padding: 0px;
+    
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+
+    
+    .top_cards{
+        grid-column: 2;
+        grid-row: 2;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0px;
+        padding-top: 0px;
+    }
+
+    .top_menu{
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-column: 2;
+        grid-row: 1;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+  }
+
+
