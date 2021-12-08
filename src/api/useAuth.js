@@ -6,7 +6,7 @@ export default function useAuth( code ) {
 
     useEffect(() => {
         if (!code) return
-        axios.post('https://statify-bbbaden.azurewebsites.net/login', { 
+        axios.post('http://localhost:3001/login', { 
                 code,
             })
             .then(res => {
