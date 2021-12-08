@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js",
+    "azure": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run start"
+  },
+  "keywords": [],
+  "author": "Eray & Elia",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erayyy/Statify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Erayyy/Statify/issues"
+  },
+  "homepage": "https://github.com/Erayyy/Statify#readme",
+  "description": ""
+}
