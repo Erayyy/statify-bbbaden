@@ -29,8 +29,8 @@ app.get('*', (req, res) => {
 
 app.post('/login', cors(corsOptionsDelegate), (req, res) => {
     const spotifyApi = new SpotifyWebApi({
-        clientId: '1d9716b896714fdb9bbc9f0de3195d42',
-        clientSecret: '5e1ac59d6fe49c6a914fa58a3b21a17',
+        clientId: 'YOUR CLIENT ID',
+        clientSecret: 'YOUR CLIENT SECRET',
         redirectUri: 'https://statify-bbbaden.azurewebsites.net/'
     })
 
@@ -52,8 +52,8 @@ app.post('/login', cors(corsOptionsDelegate), (req, res) => {
 app.post('/refresh', cors(corsOptionsDelegate), (req, res) => {
     const refreshToken = req.body.refreshToken;
     const spotifyApi = new SpotifyWebApi({
-        clientId: '1d9716b896714fdb9bbc9f0de3195d42',
-        clientSecret: '5e1ac59d6fe49c6a914fa58a3b21a17',
+        clientId: 'YOUR CLIENT ID',
+        clientSecret: 'YOUR CLIENT SECRET',
         redirectUri: 'https://statify-bbbaden.azurewebsites.net/',
         refreshToken
     })
