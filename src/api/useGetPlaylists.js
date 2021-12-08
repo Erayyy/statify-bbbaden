@@ -18,7 +18,7 @@ export default function useGetPlaylists() {
                 setPlaylists(res.data.playlists)
             })
             .catch(() => {
-                axios.post('http://localhost:3001/refresh', {
+                axios.post('http://localhost:8080/refresh', {
                     refreshToken,
                 })
                     .then(res => {
