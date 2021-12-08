@@ -18,7 +18,7 @@ export default function useGetPlaylists() {
                 setPlaylists(res.data.playlists)
             })
             .catch(() => {
-                axios.post('https://statify-bbbaden.azurewebsites.net/refresh', {
+                axios.post('http://localhost:3001/refresh', {
                     refreshToken,
                 })
                     .then(res => {
